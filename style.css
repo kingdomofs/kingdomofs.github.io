@@ -17,7 +17,8 @@ html {
 
 body {
   margin: 0;
-  font-family: 'Montserrat', sans-serif;
+  font-family: 'Space Mono', monospace;
+
 }
 
 /* HTML5 display definitions
@@ -440,7 +441,7 @@ textarea {
    -webkit-text-stroke-color: #fafafa;
   }
 section {
-    height: 100vh;
+    height: 94vh;
 }
 img.logo {
     margin-top: 1%;
@@ -477,9 +478,9 @@ section.home {
    text-align: center;
    margin-left: auto;
    margin-right: auto;
-   margin-top: 8%;
+   margin-top: 3%;
    padding: 15px;
-    background-color: rgba(66,66,66 ,0.6);
+    background-color: rgba(66,66,66 ,0.94);
     color: rgba(250,250,250 ,1);
     border-radius: 10px;
   }
@@ -494,4 +495,55 @@ a.know:active {
   padding-right: 25px;
   color: #fafafa;
   text-decoration: none;
+}
+
+.tooltip {
+    position: relative;
+    display: inline-block;
+    border-bottom: 1px dotted black;
+}
+
+.tooltip .tooltiptext {
+    visibility: hidden;
+    width: auto;
+    padding: 1%;
+    background-color: #212121;
+    color: #fafafa;
+    text-align: center;
+    border-radius: 6px;
+    //padding: 5px 0;
+
+    /* Position the tooltip */
+    position: absolute;
+    z-index: 1;
+}
+
+.tooltip:hover .tooltiptext {
+    visibility: visible;
+}
+
+span.content-body {
+	font-size: 30px;
+}
+
+/* this is for ordinary links so they look distinctive */
+a.normal-link,
+a.normal-link:link,
+a.normal-link:hover,
+a.normal-link:active {
+  color: #fafafa;
+  background-color: #000000;
+  text-decoration: none;
+}
+
+/* Footer styling */
+footer {
+	height: 6vh;
+	background-color: #212121;
+}
+span.footer-left {
+	float: left;
+	color: #fafafa;
+	padding-left: 10%;
+	padding-top: 1%;
 }

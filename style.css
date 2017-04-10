@@ -464,8 +464,8 @@ a.h-link {
 section.home {
     background-color: ##F5F5F5;
     background-size: contain;
-    -webkit-filter: grayscale(100%);
-    filter: grayscale(100%);
+    //-webkit-filter: grayscale(100%);
+    //filter: grayscale(100%);
 }
 .home-content {
   width: 60%;
@@ -492,11 +492,25 @@ a.know:active {
   text-decoration: none;
 }
 
+a.twitter {
+	color: #55acee;
+}
+a.linkedin {
+	color: #0077B5;
+}
+a.ph {
+	color: #da552f;
+}
+a.fb {
+	color: #3b5999;
+}
+
 
 a.masterTooltip {
 	text-decoration: none !important;
 	border-bottom: 3px dashed #999;
-	display: inline;	
+	display: inline;
+	color: #424242;
 }
 .tooltip {
 	display:none;
@@ -507,4 +521,14 @@ a.masterTooltip {
 	padding:10px;
 	color:#fff;
 	font-size:12px Arial;
+}
+
+/*Messenger Button*/
+.messenger {
+	padding-right: 3%;
+	float:right;
+}
+img.msngr {
+	height:60px;
+	width:auto;
 }

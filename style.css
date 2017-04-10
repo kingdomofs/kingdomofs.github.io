@@ -426,7 +426,7 @@ textarea {
 
 /*Header*/
 .header{
-    color: #f1f1f1;
+    color: ##212121;
     z-index: 101;
     font-size: 16px;
     top: 0;
@@ -449,7 +449,7 @@ img.logo {
     padding-right:3%;
     padding-left: 3%;
     -webkit-text-stroke-width: 1px;
-   -webkit-text-stroke-color: #fafafa;
+   -webkit-text-stroke-color: ##212121;
 }
 a.h-link {
     padding-left: 2%;
@@ -462,7 +462,7 @@ a.h-link {
     color: #fafafa;
 }
 section.home {
-    background-image: url('img/home4.jpg');
+    background-color: ##F5F5F5;
     background-size: contain;
     -webkit-filter: grayscale(100%);
     filter: grayscale(100%);
@@ -470,28 +470,41 @@ section.home {
 .home-content {
   width: 60%;
   color: #fafafa;
-  -webkit-text-stroke-width: 1px;
-   -webkit-text-stroke-color: #fafafa;
    font-weight: normal;
    font-size: 35px;
-   text-align: center;
+   text-align: left;
    margin-left: auto;
    margin-right: auto;
    margin-top: 8%;
    padding: 15px;
-    background-color: rgba(66,66,66 ,0.6);
-    color: rgba(250,250,250 ,1);
+    color: rgba(33,33,33 ,1);
     border-radius: 10px;
   }
-  .highlight {
-    background-color: #212121;
-    font-weight: bold;
-  }
+span.desc {
+	font-size: 80%;
+}
+
 a.know,
 a.know:link,
 a.know:hover,
 a.know:active {
   padding-right: 25px;
-  color: #fafafa;
   text-decoration: none;
+}
+
+
+a.masterTooltip {
+	text-decoration: none !important;
+	border-bottom: 3px dashed #999;
+	display: inline;	
+}
+.tooltip {
+	display:none;
+	position:absolute;
+	border:1px solid #333;
+	background-color:#161616;
+	border-radius:5px;
+	padding:10px;
+	color:#fff;
+	font-size:12px Arial;
 }

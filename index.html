@@ -4,21 +4,21 @@
 
   <meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0">
-	<meta name="description" content="Sandeep Tripathy is an entrepreneur, musician and designer specialized in frontend development and user interfaces.">
+	<meta name="description" content="Sandeep Tripathy is an artist, programmer, entrepreneur & digital media professional.">
 	<meta name="author" content="Sandeep Tripathy">
 
 	<!-- opengraph -->
 	<meta property="og:title" content="Sandeep Tripathy" />
 	<meta property="og:url" content="https://www.kingdomofs.com" />
 	<meta property="og:type" content="website" />
-	<meta property="og:description" content="Sandeep Tripathy is an entrepreneur, musician and designer specialized in frontend development and user interfaces." />
+	<meta property="og:description" content="Sandeep Tripathy is an artist, programmer, entrepreneur & digital media professional" />
 	<meta property="og:image" content="https://www.kingdomofs.com/image.jpg" />
 	<meta property="fb:app_id" content="1039313759467142" />
 
 	<!-- Twitter opengraph -->
 	<meta name="twitter:card" content="summary" />
 	<meta name="twitter:title" content="Sandeep Tripathy" />
-	<meta name="twitter:description" content="Sandeep Tripathy is an entrepreneur, musician and designer specialized in frontend development and user interfaces." />
+	<meta name="twitter:description" content="Sandeep Tripathy is an artist, programmer, entrepreneur & digital media professional" />
 	<meta name="twitter:url" content="https://www.kingdomofs.com" />
 	<meta name="twitter:image" content="https://www.kingdomofs.com/image.jpg" />
 
@@ -66,19 +66,19 @@ $(function() {
   "name": "Sandeep Tripathy",
   "givenName": "Sandeep",
   "familyName": "Tripathy",
-  "jobTitle": "Entrepreneur",
+  "jobTitle": "Artist",
   "url": "https://www.kingdomofs.com",
   "sameAs" : [
     "https://plus.google.com/u/0/+SandeepTripathyofficial/",
     "https://twitter.com/Kingdomof_S",
-    "https://www.facebook.com/sandeep.tripathy/",
+    "https://www.facebook.com/kingdomofs",
     "https://www.instagram.com/kingdomofs",
     "https://www.crunchbase.com/person/sandeep-tripathy",
     "https://www.f6s.com/kingdomofs",
     "https://github.com/kingdomofs",
     "https://angel.co/kingdomofs",
     "https://www.producthunt.com/@kingdomof_s",
-    "https://in.linkedin.com/in/tripathysandeep"
+    "https://in.linkedin.com/in/Kingdomofs"
   ],
   "alumniOf" :[
     {
@@ -127,7 +127,7 @@ $(function() {
     {
       "@context": "http://schema.org",
       "@type": "Corporation",
-      "name": "SUEZ Environnement",
+      "name": "SUEZ",
       "url":"http://www.suez-environnement.com/",
       "sameAs": [
         "https://en.wikipedia.org/wiki/Suez_Environnement",
@@ -150,7 +150,7 @@ $(function() {
   "birthPlace": "Connaught Place, New Delhi"
 }
  </script>
-<title>Sandeep Tripathy - Designer + Entrepreneur + Musician</title>
+<title>Sandeep Tripathy - Hack + Build = Innovate</title>
 </head>
 
 <body>
@@ -167,9 +167,9 @@ $(function() {
       <!--<a class="h-link" href="#contact">Contact</a>-->
     </div>
     <div class="home-content">
-      My name is <span class="highlight">SANDEEP Tripathy</span><br/><!--I'm a designer working mainly on Frontend development, User Experience and User Interfaces.--><br/>
+      <b>Hack + Build = Innovate</b><br/><br/>My name is Sandeep Tripathy.<br/><span class="desc">I am a <a href="#" title="Social Media for Isobar India@Dentsu Aegis" class="masterTooltip">Digital Media professional</a>, <a href="#" title="Code for the web, QMUL EECS Alum" class="masterTooltip">programmer</a> & <a href="#" title="Co-founder of 2 startups" class="masterTooltip">entrepreneur.</a></span><br/>
       <p style="height:10px;color:transparent;"></p>
-      <a target="_blank" class="know fa fa-twitter-square" href="https://twitter.com/Kingdomof_S"></a><a target="_blank" class="know fa fa-facebook-square" href="https://www.facebook.com/sandeep.shawn.tripathy/"></a><a target="_blank" class="know fa fa-google-plus-square" href="https://plus.google.com/b/104788015919024021087/+Kingdomofs/"></a><a target="_blank" class="know fa fa-product-hunt" href="https://www.producthunt.com/@kingdomof_s"></a><a target="_blank" class="know fa fa-linkedin-square" href="https://in.linkedin.com/in/tripathysandeep"></a><a target="_blank" class="know fa fa-behance-square" href="https://www.behance.net/kingdomofs/"></a>
+      <a target="_blank" class="know twitter fa fa-twitter-square" href="https://twitter.com/Kingdomof_S"></a><a target="_blank" class="know fb fa fa-facebook-square" href="https://www.facebook.com/kingdomofs/"></a><a target="_blank" class="know ph fa fa-product-hunt" href="https://www.producthunt.com/@kingdomof_s"></a><a target="_blank" class="know linkedin fa fa-linkedin-square" href="https://in.linkedin.com/in/kingdomofs"></a>
 
     </div>
 
@@ -191,6 +191,32 @@ $(function() {
 
 
 <footer></footer>-->
+
+<script type="text/javascript">
+/* This is for tooltip */
+$(document).ready(function() {
+// Tooltip only Text
+$('.masterTooltip').hover(function(){
+        // Hover over code
+        var title = $(this).attr('title');
+        $(this).data('tipText', title).removeAttr('title');
+        $('<p class="tooltip"></p>')
+        .text(title)
+        .appendTo('body')
+        .fadeIn('slow');
+}, function() {
+        // Hover out code
+        $(this).attr('title', $(this).data('tipText'));
+        $('.tooltip').remove();
+}).mousemove(function(e) {
+        var mousex = e.pageX + 20; //Get X coordinates
+        var mousey = e.pageY + 10; //Get Y coordinates
+        $('.tooltip')
+        .css({ top: mousey, left: mousex })
+});
+});
+</script>
+
 </body>
 
 </html>

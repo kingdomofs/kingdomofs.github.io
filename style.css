@@ -18,6 +18,7 @@ html {
 body {
   margin: 0;
   font-family: 'Montserrat', sans-serif;
+  background: #EEEEEE;
 }
 
 /* HTML5 display definitions
@@ -436,9 +437,29 @@ textarea {
     text-align: center;
     line-height: 2.5;
     overflow: hidden;
-    -webkit-text-stroke-width: 1px;
-   -webkit-text-stroke-color: #fafafa;
-  }
+}
+
+a.home {
+    background-color: transparent;
+    color: #222831;
+    text-decoration: none;
+    font-weight: 600;
+    letter-spacing: 3px;
+    font-size: 34px;
+}
+
+.subtitle {
+  font-size: 116px;
+}
+
+.heademail {
+    position: absolute;
+    right: 0;
+    color: #222831;
+    font-size: 22px;
+    padding-right: 1%;
+}
+
 section {
     height: 100vh;
 }
@@ -472,7 +493,6 @@ section.home {
   color: #fafafa;
    font-weight: normal;
    font-size: 35px;
-   text-align: left;
    margin-left: auto;
    margin-right: auto;
    margin-top: 8%;
@@ -481,7 +501,7 @@ section.home {
     border-radius: 10px;
   }
 span.desc {
-	font-size: 80%;
+	font-size: 45px;
 }
 
 a.know,
@@ -510,9 +530,9 @@ a.insta {
 
 a.masterTooltip {
 	text-decoration: none !important;
-	border-bottom: 3px dashed #999;
+	border-bottom: 2px dashed #999;
 	display: inline;
-	color: #424242;
+	color: #222831;
 }
 .tooltip {
 	display:none;
